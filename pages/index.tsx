@@ -1,4 +1,5 @@
 import { NextPage } from 'next';
+import Router from 'next/router';
 import withGA from 'next-ga';
 
 import data, { IResume } from '../data/data';
@@ -102,4 +103,4 @@ Resume.getInitialProps = async () => {
     return { data };
 };
 
-export default withGA("UA-40889102-4")(Resume);
+export default withGA("UA-40889102-4", Router)(Resume);
