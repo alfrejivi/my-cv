@@ -54,7 +54,7 @@ const styles = (
         .Resume {
             display: flex;
             flex-direction: column;
-            padding: 5rem 1rem;
+            padding: 2rem 1rem;
             width: 100vw;
             max-width: 1500px;
             margin: auto;
@@ -63,8 +63,7 @@ const styles = (
         .Resume-content{
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
-            margin: 0 1rem;
+            justify-content: space-between
         }
         .Resume-main{
             flex: 2 520px;

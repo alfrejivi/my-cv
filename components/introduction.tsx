@@ -12,7 +12,7 @@ const styles = (
             justify-content: space-between;
             flex-wrap: wrap;
             padding: 3rem 0;
-            margin: 0 2rem;
+            margin: 0 1rem;
         }
         .Introduction-avatar {
             width: 200px;
