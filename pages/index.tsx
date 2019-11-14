@@ -1,4 +1,6 @@
 import { NextPage } from 'next';
+import ReactGA from 'react-ga';
+
 import data, { IResume } from '../data/data';
 import Experience from '../components/experience';
 import Education from '../components/education';
@@ -97,6 +99,8 @@ const Resume: NextPage<{ data: IResume }> = ({ data }) => (
 );
 
 Resume.getInitialProps = async () => {
+    ReactGA.initialize('UA-40889102-4');
+    ReactGA.pageview(window.location.pathname + window.location.search);
     return { data };
 };
 
