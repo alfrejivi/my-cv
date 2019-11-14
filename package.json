@@ -14,9 +14,9 @@
   "license": "ISC",
   "dependencies": {
     "next": "^9.1.2",
+    "next-ga": "^2.3.4",
     "react": "^16.11.0",
-    "react-dom": "^16.11.0",
-    "react-ga": "^2.7.0"
+    "react-dom": "^16.11.0"
   },
   "devDependencies": {
     "@types/node": "^12.12.6",
