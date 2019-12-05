@@ -1,4 +1,5 @@
 import { NextPage } from 'next';
+import getConfig from "next/config";
 import Router from 'next/router';
 import withGA from 'next-ga';
 
@@ -10,6 +11,8 @@ import Skills from '../components/skills';
 import Languages from '../components/languages';
 import Contact from '../components/contact';
 import Awards from '../components/awards';
+
+const { publicRuntimeConfig } = getConfig();
 
 const styles = (
     <style jsx global>{`
@@ -103,4 +106,4 @@ Resume.getInitialProps = async () => {
     return { data };
 };
 
-export default withGA("UA-40889102-4", Router)(Resume);
+export default withGA(publicRuntimeConfig.gaId, Router)(Resume);
