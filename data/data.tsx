@@ -4,6 +4,8 @@ export interface IIntroduction {
     name: string;
     avatar: string;
     location: string;
+    description: string;
+    position: string;
 }
 
 export interface IWork {
@@ -64,7 +66,9 @@ const Resume: IResume = {
     introduction: {
         name: "Freddy Jimenez",
         avatar: "./avatar.jpg",
-        location: "Amsterdam, The Netherlands"
+        location: "Amsterdam, The Netherlands",
+        description: "Versatile Fullstack Developer with 6+ years of experience developing Javascript applications. -- RESTful API development and integrations. -- Translating from design, wireframes, and mockups into responsive, interactive websites/apps, using HTML, CSS, and JavaScript. -- Good eye for design. Sensitivity for details. -- Ease of learning.",
+        position: "Fullstack Engineer @qwic"
     },
     experience: [
         {

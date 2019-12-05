@@ -43,10 +43,8 @@ const Introduction = ({ data }: IntroductionProps) => {
                 <img className="Introduction-avatar" src={data.avatar} />
                 <div className="Introduction-wrapper">
                     <h1 className="Introduction-name">{data.name}</h1>
-                    <h2 className="Introduction-title">Fullstack Engineer @qwic</h2>
-                    <p className="Introduction-description">
-                        Versatile Fullstack Developer with more experience on the frontend. 5+ years of experience developing web applications using Javascript (latest 3 years using React.js).
-                    </p>
+                    <h2 className="Introduction-title">{data.position}</h2>
+                    <p className="Introduction-description">{data.description}</p>
                     <span className="Introduction-location">
                         {data.location}
                     </span>
