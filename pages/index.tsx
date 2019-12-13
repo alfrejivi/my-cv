@@ -1,5 +1,6 @@
 import { NextPage } from 'next';
 import getConfig from "next/config";
+import Head from 'next/head';
 import Router from 'next/router';
 import withGA from 'next-ga';
 
@@ -85,6 +86,16 @@ const styles = (
 
 const Resume: NextPage<{ data: IResume }> = ({ data }) => (
     <section className="Resume">
+        <Head>
+            <title>Freddy Jimenez</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+            <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+            <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+            <link rel="manifest" href="./favicon/site.webmanifest" />
+            <meta name="msapplication-TileColor" content="#da532c" />
+            <meta name="theme-color" content="#ffffff"></meta>
+        </Head>
         <Introduction data={data.introduction} />
         <section className="Resume-content">
             <section className="Resume-main">
