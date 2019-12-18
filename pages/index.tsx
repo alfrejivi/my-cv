@@ -1,10 +1,8 @@
-import { NextPage } from 'next';
-import getConfig from "next/config";
 import Head from 'next/head';
 import Router from 'next/router';
 import withGA from 'next-ga';
 
-import data, { IResume } from '../data/data';
+import data from '../data/data';
 import Experience from '../components/experience';
 import Education from '../components/education';
 import Introduction from '../components/introduction';
@@ -12,8 +10,6 @@ import Skills from '../components/skills';
 import Languages from '../components/languages';
 import Contact from '../components/contact';
 import Awards from '../components/awards';
-
-const { publicRuntimeConfig } = getConfig();
 
 const styles = (
     <style jsx global>{`
@@ -84,7 +80,7 @@ const styles = (
     `}</style>
 );
 
-const Resume: NextPage<{ data: IResume }> = ({ data }) => (
+const Resume = () => (
     <section className="Resume">
         <Head>
             <title>Freddy Jimenez</title>
@@ -113,8 +109,4 @@ const Resume: NextPage<{ data: IResume }> = ({ data }) => (
     </section>
 );
 
-Resume.getInitialProps = async () => {
-    return { data };
-};
-
-export default withGA(publicRuntimeConfig.gaId, Router)(Resume);
+export default withGA(process.env.GA_ID, Router)(Resume);
