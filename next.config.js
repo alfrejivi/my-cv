@@ -1,6 +1,5 @@
 module.exports = {
-    distDir: 'build',
-    publicRuntimeConfig: {
-        gaId: process.env.GA_ID,
-    },
+    env: {
+        GA_ID: process.env.GA_ID
+    }
 }
