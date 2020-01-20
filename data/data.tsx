@@ -88,6 +88,7 @@ const Resume: IResume = {
                 { name: 'Typescript', icon: 'https://cdn.svgporn.com/logos/typescript-icon.svg' },
                 { name: 'Mobx State Tree', icon: 'https://cdn.svgporn.com/logos/mobx.svg' },
                 { name: 'Nodejs', icon: 'https://cdn.svgporn.com/logos/nodejs-icon.svg' },
+                { name: 'Nestjs', icon: 'https://cdn.svgporn.com/logos/nestjs.svg' },
                 { name: 'AWS', icon: 'https://cdn.svgporn.com/logos/aws.svg' },
                 { name: 'Git', icon: 'https://cdn.svgporn.com/logos/git-icon.svg' },
             ]
