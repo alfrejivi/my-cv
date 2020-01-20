@@ -91,6 +91,7 @@ const Resume: IResume = {
                 { name: 'Nestjs', icon: 'https://cdn.svgporn.com/logos/nestjs.svg' },
                 { name: 'AWS', icon: 'https://cdn.svgporn.com/logos/aws.svg' },
                 { name: 'Git', icon: 'https://cdn.svgporn.com/logos/git-icon.svg' },
+                { name: 'Flutter', icon: 'https://cdn.svgporn.com/logos/flutter.svg' }
             ]
         },
         {
@@ -217,7 +218,8 @@ const Resume: IResume = {
         { name: 'HTML', icon: 'https://cdn.svgporn.com/logos/html-5.svg' },
         { name: 'CSS', icon: 'https://cdn.svgporn.com/logos/css-3.svg' },
         { name: 'Java', icon: 'https://cdn.svgporn.com/logos/java.svg' },
-        { name: 'Zeplin', icon: 'https://cdn.svgporn.com/logos/zeplin.svg' }
+        { name: 'Zeplin', icon: 'https://cdn.svgporn.com/logos/zeplin.svg' },
+        { name: 'Flutter', icon: 'https://cdn.svgporn.com/logos/flutter.svg' }
     ],
     awards: [
         {
