@@ -29,6 +29,7 @@ export interface ISchoolEntity {
 export interface ISkill {
     name: string;
     icon: string;
+    current?: boolean;
 }
 
 export interface IAward {
@@ -65,7 +66,7 @@ export interface IResume {
 const Resume: IResume = {
     introduction: {
         name: "Freddy Jimenez",
-        avatar: "./avatar.jpg",
+        avatar: "./images/avatar.jpg",
         location: "Amsterdam, The Netherlands",
         description: "Versatile Fullstack Developer with 6+ years of experience developing Javascript applications. -- RESTful API development and integrations. -- Translating from design, wireframes, and mockups into responsive, interactive websites/apps, using HTML, CSS, and JavaScript. -- Good eye for design. Sensitivity for details. -- Ease of learning.",
         position: "Fullstack Engineer @qwic"
@@ -74,7 +75,7 @@ const Resume: IResume = {
         {
             title: 'Full Stack Engineer',
             company: 'QWIC',
-            logo: './qwic.png',
+            logo: './images/qwic.png',
             duration: 'December 2018 - Current',
             location: 'Amsterdam, The Netherlands',
             description: [
@@ -87,17 +88,17 @@ const Resume: IResume = {
                 { name: 'Reactjs', icon: 'https://cdn.svgporn.com/logos/react.svg' },
                 { name: 'Typescript', icon: 'https://cdn.svgporn.com/logos/typescript-icon.svg' },
                 { name: 'Mobx State Tree', icon: 'https://cdn.svgporn.com/logos/mobx.svg' },
-                { name: 'Nodejs', icon: 'https://cdn.svgporn.com/logos/nodejs-icon.svg' },
                 { name: 'Nestjs', icon: 'https://cdn.svgporn.com/logos/nestjs.svg' },
                 { name: 'AWS', icon: 'https://cdn.svgporn.com/logos/aws.svg' },
                 { name: 'Git', icon: 'https://cdn.svgporn.com/logos/git-icon.svg' },
-                { name: 'Flutter', icon: 'https://cdn.svgporn.com/logos/flutter.svg' }
+                { name: 'Flutter', icon: 'https://cdn.svgporn.com/logos/flutter.svg' },
+                { name: 'JSS', icon: './images/jss.png' },
             ]
         },
         {
             title: 'Frontend Engineer II',
             company: 'Ooyala',
-            logo: './ooyala.png',
+            logo: './images/ooyala.png',
             duration: 'February 2017 - November 2018',
             location: 'Guadalajara, Mexico',
             description: [
@@ -116,12 +117,13 @@ const Resume: IResume = {
                 { name: 'Hapijs', icon: 'https://cdn.svgporn.com/logos/hapi.svg' },
                 { name: 'PostgreSQL', icon: 'https://cdn.svgporn.com/logos/postgresql.svg' },
                 { name: 'Git', icon: 'https://cdn.svgporn.com/logos/git-icon.svg' },
+                { name: 'Stylus', icon: 'https://cdn.svgporn.com/logos/stylus.svg' }
             ]
         },
         {
             title: 'Frontend Engineer',
             company: 'Ooyala',
-            logo: './ooyala.png',
+            logo: './images/ooyala.png',
             duration: 'July 2015 - January 2017',
             location: 'Guadalajara, Mexico',
             description: [
@@ -139,12 +141,13 @@ const Resume: IResume = {
                 { name: 'Expressjs', icon: 'https://cdn.svgporn.com/logos/express.svg' },
                 { name: 'PostgreSQL', icon: 'https://cdn.svgporn.com/logos/postgresql.svg' },
                 { name: 'Git', icon: 'https://cdn.svgporn.com/logos/git-icon.svg' },
+                { name: 'Sass', icon: 'https://cdn.svgporn.com/logos/sass.svg' },
             ]
         },
         {
             title: 'Frontend Engineer',
             company: 'Intagono',
-            logo: 'https://intagono.com/wp-content/uploads/2017/08/logo_intagono-2x.png',
+            logo: './images/intagono.png',
             duration: 'May 2014 - July 2015',
             location: 'Guadalajara, Mexico',
             description: [
@@ -160,6 +163,7 @@ const Resume: IResume = {
                 { name: 'Laravel', icon: 'https://cdn.svgporn.com/logos/laravel.svg' },
                 { name: 'MySQL', icon: 'https://cdn.svgporn.com/logos/mysql.svg' },
                 { name: 'Git', icon: 'https://cdn.svgporn.com/logos/git-icon.svg' },
+                { name: 'Sass', icon: 'https://cdn.svgporn.com/logos/sass.svg' },
             ]
         },
         {
@@ -182,49 +186,53 @@ const Resume: IResume = {
         }
     ],
     education: [
-        { name: 'Universidad de Guadalajara', logo: './udg.png', title: 'Computer Engineering, Software', duration: '2008 - 2013' },
+        { name: 'Universidad de Guadalajara', logo: './images/udg.png', title: 'Computer Engineering, Software', duration: '2008 - 2013' },
         { name: 'IoT', logo: 'https://cdn.svgporn.com/logos/aws.svg', title: 'Developing and Deploying an Internet of Things', duration: 'August 2019', credentialLink: 'https://courses.edx.org/certificates/d372e340b9894e80becea59fd705967b' },
-        { name: '', logo: './jsnation.svg', title: 'TypeScript Workshop with Michel Weststrate + Conference', duration: 'June 2019' },
+        { name: '', logo: './images/jsnation.svg', title: 'TypeScript Workshop with Michel Weststrate + Conference', duration: 'June 2019' },
         { name: 'Lynda.com', logo: 'https://cdn.svgporn.com/logos/lynda.svg', title: 'Performing Complex State Management with Redux', duration: 'September 2018', credentialLink: 'http://www.lynda.com/Redux-tutorials/Performing-Complex-State-Management-Redux/724805-2.html' },
         { name: 'Lynda.com', logo: 'https://cdn.svgporn.com/logos/lynda.svg', title: 'React: Testing and Debugging', duration: 'September 2018', credentialLink: 'http://www.lynda.com/React-js-tutorials/React-Testing-Debugging/592511-2.html' },
-        { name: '', logo: './platzi.png', title: 'Javascript Fundamentals', duration: 'December 2017', credentialLink: 'https://platzi.com/@alfrejivi/curso/1099-fundamentos-javascript-2017/diploma/detalle/' },
-        { name: '', logo: './caav.svg', title: 'Graphic Design Certified', duration: 'June 2015' },
+        { name: '', logo: './images/platzi.png', title: 'Javascript Fundamentals', duration: 'December 2017', credentialLink: 'https://platzi.com/@alfrejivi/curso/1099-fundamentos-javascript-2017/diploma/detalle/' },
+        { name: '', logo: './images/caav.svg', title: 'Graphic Design Certified', duration: 'June 2015' },
         { name: '', logo: 'https://cdn.svgporn.com/logos/oracle.svg', title: 'Oracle Certified Professional, Java SE 6 Programmer', duration: 'January 2013', credentialLink: 'https://www.youracclaim.com/badges/4783a9a8-75d8-4bd1-b1a4-983db13c8dbe/linked_in_profile' },
-        { name: '', logo: './brandhome.png', title: 'Web Development Certified', duration: 'September 2011' },
-        { name: 'Code School', logo: './code-school.png', title: 'Shaping up with angularjs', duration: 'September 2011' },
+        { name: '', logo: './images/brandhome.png', title: 'Web Development Certified', duration: 'September 2011' },
+        { name: 'Code School', logo: './images/code-school.png', title: 'Shaping up with angularjs', duration: 'September 2011' },
     ],
     skills: [
         { name: 'Javascript', icon: 'https://cdn.svgporn.com/logos/javascript.svg' },
-        { name: 'Reactjs', icon: 'https://cdn.svgporn.com/logos/react.svg' },
-        { name: 'Typescript', icon: 'https://cdn.svgporn.com/logos/typescript-icon.svg' },
-        { name: 'Mobx State Tree', icon: 'https://cdn.svgporn.com/logos/mobx.svg' },
+        { name: 'Reactjs', icon: 'https://cdn.svgporn.com/logos/react.svg', current: true },
+        { name: 'Typescript', icon: 'https://cdn.svgporn.com/logos/typescript-icon.svg', current: true },
+        { name: 'Mobx State Tree', icon: 'https://cdn.svgporn.com/logos/mobx.svg', current: true },
         { name: 'Redux', icon: 'https://cdn.svgporn.com/logos/redux.svg' },
         { name: 'Flux', icon: 'https://cdn.svgporn.com/logos/flux.svg' },
         { name: 'Angularjs', icon: 'https://cdn.svgporn.com/logos/angular-icon.svg' },
-        { name: 'AWS', icon: 'https://cdn.svgporn.com/logos/aws.svg' },
+        { name: 'AWS', icon: 'https://cdn.svgporn.com/logos/aws.svg', current: true },
         { name: 'Netlify', icon: 'https://cdn.svgporn.com/logos/netlify.svg' },
         { name: 'Zeit', icon: 'https://cdn.svgporn.com/logos/zeit-icon.svg' },
         { name: 'Nextjs', icon: 'https://cdn.svgporn.com/logos/nextjs.svg' },
         { name: 'Nodejs', icon: 'https://cdn.svgporn.com/logos/nodejs-icon.svg' },
-        { name: 'Nestjs', icon: 'https://cdn.svgporn.com/logos/nestjs.svg' },
-        { name: 'Jest', icon: 'https://cdn.svgporn.com/logos/jest.svg' },
-        { name: 'React Testing library', icon: 'https://testing-library.com/img/logo-large.png' },
+        { name: 'Nestjs', icon: 'https://cdn.svgporn.com/logos/nestjs.svg', current: true },
+        { name: 'Jest', icon: 'https://cdn.svgporn.com/logos/jest.svg', current: true },
+        { name: 'React Testing library', icon: 'https://testing-library.com/img/logo-large.png', current: true },
         { name: 'Enzyme', icon: 'https://cdn.svgporn.com/logos/airbnb.svg' },
         { name: 'Mocha', icon: 'https://cdn.svgporn.com/logos/mocha.svg' },
-        { name: 'Puppeteer', icon: 'https://cdn.svgporn.com/logos/puppeteer.svg' },
-        { name: 'Sentry', icon: 'https://cdn.svgporn.com/logos/sentry.svg' },
-        { name: 'Git', icon: 'https://cdn.svgporn.com/logos/git-icon.svg' },
+        { name: 'Puppeteer', icon: 'https://cdn.svgporn.com/logos/puppeteer.svg', current: true },
+        { name: 'Sentry', icon: 'https://cdn.svgporn.com/logos/sentry.svg', current: true },
+        { name: 'Git', icon: 'https://cdn.svgporn.com/logos/git-icon.svg', current: true },
         { name: 'Jira', icon: 'https://cdn.svgporn.com/logos/jira.svg' },
-        { name: 'HTML', icon: 'https://cdn.svgporn.com/logos/html-5.svg' },
-        { name: 'CSS', icon: 'https://cdn.svgporn.com/logos/css-3.svg' },
+        { name: 'HTML5', icon: 'https://cdn.svgporn.com/logos/html-5.svg', current: true },
+        { name: 'CSS3', icon: 'https://cdn.svgporn.com/logos/css-3.svg' },
         { name: 'Java', icon: 'https://cdn.svgporn.com/logos/java.svg' },
-        { name: 'Zeplin', icon: 'https://cdn.svgporn.com/logos/zeplin.svg' },
-        { name: 'Flutter', icon: 'https://cdn.svgporn.com/logos/flutter.svg' }
+        { name: 'Zeplin', icon: 'https://cdn.svgporn.com/logos/zeplin.svg', current: true },
+        { name: 'Flutter', icon: 'https://cdn.svgporn.com/logos/flutter.svg', current: true },
+        { name: 'Styled Components', icon: './images/styled-components.png' },
+        { name: 'JSS', icon: './images/jss.png', current: true },
+        { name: 'Sass', icon: 'https://cdn.svgporn.com/logos/sass.svg' },
+        { name: 'Stylus', icon: 'https://cdn.svgporn.com/logos/stylus.svg' },
     ],
     awards: [
         {
             title: 'BlackBerry Jam Sessions Latino America Winner!',
-            logo: './blackberry.png',
+            logo: './images/blackberry.png',
             location: 'CDMX, Mexico',
             issuer: 'BlackBerry',
             description: 'First place winner at BlackBerry Jam Sessions Latino America #15 on the “Best Design” category and second place on the “Best app” category.',
@@ -243,7 +251,7 @@ const Resume: IResume = {
         }
     ],
     contact: [
-        { name: 'Linkedin', icon: './linkedin.png', link: 'https://www.linkedin.com/in/alfrejivi/' },
+        { name: 'Linkedin', icon: './images/linkedin.png', link: 'https://www.linkedin.com/in/alfrejivi/' },
         { name: 'Github', icon: 'https://cdn.svgporn.com/logos/github-icon.svg', link: 'https://github.com/alfrejivi' },
         { name: 'Twitter', icon: 'https://cdn.svgporn.com/logos/twitter.svg', link: 'https://twitter.com/alfrejivi' },
         { name: 'alfrejivi@gmail.com', icon: 'https://cdn.svgporn.com/logos/google-gmail.svg', link: 'mailto:alfrejivi@gmail.com' },
