@@ -198,7 +198,7 @@ const Resume: IResume = {
         { name: 'Code School', logo: './images/code-school.png', title: 'Shaping up with angularjs', duration: 'September 2011' },
     ],
     skills: [
-        { name: 'Javascript', icon: 'https://cdn.svgporn.com/logos/javascript.svg', current: true },
+        { name: 'Javascript', icon: 'https://cdn.svgporn.com/logos/javascript.svg' },
         { name: 'Reactjs', icon: 'https://cdn.svgporn.com/logos/react.svg', current: true },
         { name: 'Typescript', icon: 'https://cdn.svgporn.com/logos/typescript-icon.svg', current: true },
         { name: 'Mobx State Tree', icon: 'https://cdn.svgporn.com/logos/mobx.svg', current: true },
