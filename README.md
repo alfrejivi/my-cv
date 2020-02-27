@@ -26,7 +26,7 @@ $ npm run dev
 
 ## Google Analitycs
 
-Create an `.env` file and add:
+Create an `.env` file and add your GA ID:
 
 ```javascript
 GA_ID=UA-XXXXXXXX-X
