@@ -69,7 +69,7 @@ const Resume: IResume = {
 
 
 ## Deployment
-I'm currently using [ZEIT Now](https://zeit.co/) and I highly recommend to use it. Please go to the [docs](https://zeit.co/docs) to see how incredible easy is to deploy with it.
+I'm currently using [ZEIT Now](https://zeit.co/) and I highly recommend to use it. Please go to the [docs](https://zeit.co/docs) to see how incredibly easy and fast is to deploy with it.
 
 ## Contribute
 
