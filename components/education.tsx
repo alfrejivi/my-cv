@@ -4,47 +4,6 @@ interface EducationProps {
     data: ISchoolEntity[];
 }
 
-const styles = (
-    <style jsx>{`
-        .Education {
-            display: flex;
-            flex-direction: column;
-            padding-bottom: 3rem;
-            padding: 0 1rem;
-        }
-
-        .Education-entity{
-            margin: 1rem 0;
-        }
-
-        .Education-entity-place {
-            display: flex;
-            align-items: center;
-        }
-
-        .Education-entity img {
-            max-height: 45px;
-            max-width: 80px;
-        }
-
-        .Education-entity-name {
-            margin-left: .5rem;
-        }
-
-        .Education-entity-details {
-            display: flex;
-            flex-direction: column;
-            margin-top: .5rem;
-        }
-
-        .Education-entity-duration{
-            opacity: .8;
-            font-size: .8rem;
-            align-self: flex-end;
-        }
-    `}</style>
-);
-
 const Education = ({ data }: EducationProps) => {
     return (
         <>
@@ -65,7 +24,46 @@ const Education = ({ data }: EducationProps) => {
                     ))
                 }
             </article>
-            {styles}
+            <style jsx>
+                {`
+                    .Education {
+                        display: flex;
+                        flex-direction: column;
+                        padding-bottom: 3rem;
+                        padding: 0 1rem;
+                    }
+
+                    .Education-entity{
+                        margin: 1rem 0;
+                    }
+
+                    .Education-entity-place {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .Education-entity img {
+                        max-height: 45px;
+                        max-width: 80px;
+                    }
+
+                    .Education-entity-name {
+                        margin-left: .5rem;
+                    }
+
+                    .Education-entity-details {
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: .5rem;
+                    }
+
+                    .Education-entity-duration{
+                        opacity: .8;
+                        font-size: .8rem;
+                        align-self: flex-end;
+                    }
+                `}
+            </style>
         </>
     );
 }

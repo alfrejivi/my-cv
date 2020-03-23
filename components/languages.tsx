@@ -4,21 +4,6 @@ interface LanguagesProps {
     data: ILanguage[];
 }
 
-const styles = (
-    <style jsx>{`
-        .Languages {
-            display: flex;
-            flex-direction: column;    
-            border-bottom: 1px solid rgba(200,200,200, .2);
-            padding: 0 1rem;
-            padding-bottom: 3rem;
-        }
-        .Languages-language{
-            margin: .5rem 0;
-        }
-    `}</style>
-);
-
 const Languages = ({ data }: LanguagesProps) => {
     return (
         <>
@@ -33,7 +18,20 @@ const Languages = ({ data }: LanguagesProps) => {
                     ))
                 }
             </article>
-            {styles}
+            <style jsx>
+                {`
+                    .Languages {
+                        display: flex;
+                        flex-direction: column;    
+                        border-bottom: 1px solid rgba(200,200,200, .2);
+                        padding: 0 1rem;
+                        padding-bottom: 3rem;
+                    }
+                    .Languages-language{
+                        margin: .5rem 0;
+                    }
+                `}
+            </style>
         </>
     );
 }

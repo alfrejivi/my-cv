@@ -4,53 +4,6 @@ interface AwardsProps {
     data: IAward[];
 }
 
-const styles = (
-    <style jsx>{`
-        .Award {
-            display: flex;
-            flex-direction: column; 
-            border-bottom: 1px solid rgba(200,200,200, .2);
-            padding: 0 1rem;
-            padding-bottom: 3rem;    
-        }
-        .Award-award {
-            display: flex;
-            flex-direction: column;
-            margin: 2rem 0;
-        }
-        .Award-award-title {
-            display: flex;
-            align-items: baseline;
-            justify-content: space-between;
-        }
-
-        .Award-award-date {
-            font-size: 1rem;
-            margin: 0 1rem
-        }
-
-        .Award-award-place {
-            display: flex;
-            align-items: flex-end;
-            margin: .5rem 0;
-        }
-
-        .Award-award-place img {
-            max-height: 80px;
-            max-width: 140px;
-            justify-self: center
-        }
-
-        .Award-award-place span {
-            margin-left: 1rem;
-        }
-        .Award-award-date{
-            opacity: .8;
-            font-size: .8rem;
-            align-self: flex-end;
-        }
-    `}</style>
-);
 const Awards = ({ data }: AwardsProps) => {
     return (
         <>
@@ -70,7 +23,53 @@ const Awards = ({ data }: AwardsProps) => {
                     ))
                 }
             </article>
-            {styles}
+            <style jsx>
+                {`
+                    .Award {
+                        display: flex;
+                        flex-direction: column; 
+                        border-bottom: 1px solid rgba(200,200,200, .2);
+                        padding: 0 1rem;
+                        padding-bottom: 3rem;    
+                    }
+                    .Award-award {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 2rem 0;
+                    }
+                    .Award-award-title {
+                        display: flex;
+                        align-items: baseline;
+                        justify-content: space-between;
+                    }
+
+                    .Award-award-date {
+                        font-size: 1rem;
+                        margin: 0 1rem
+                    }
+
+                    .Award-award-place {
+                        display: flex;
+                        align-items: flex-end;
+                        margin: .5rem 0;
+                    }
+
+                    .Award-award-place img {
+                        max-height: 80px;
+                        max-width: 140px;
+                        justify-self: center
+                    }
+
+                    .Award-award-place span {
+                        margin-left: 1rem;
+                    }
+                    .Award-award-date{
+                        opacity: .8;
+                        font-size: .8rem;
+                        align-self: flex-end;
+                    }
+                `}
+            </style>
         </>
     );
 }

@@ -4,31 +4,6 @@ interface ContactsProps {
     data: IContact[];
 }
 
-const styles = (
-    <style jsx>{`
-        .Contact {
-            display: flex;
-            flex-direction: column;    
-            padding: 0 1rem;
-            padding-bottom: 3rem;
-        }
-        .Contact-type{
-            display: flex;
-            align-items: center;
-            margin: .5rem 0;
-        }
-
-        .Contact-type img{
-            width: 20px;
-            margin-right: .5rem;
-        }
-
-        .Contact-type a{
-            text-decoration: none;
-            color: black;
-        }
-    `}</style>
-);
 const Contact = ({ data }: ContactsProps) => {
     return (
         <>
@@ -43,7 +18,31 @@ const Contact = ({ data }: ContactsProps) => {
                     ))
                 }
             </article>
-            {styles}
+            <style jsx>
+                {`
+                    .Contact {
+                        display: flex;
+                        flex-direction: column;    
+                        padding: 0 1rem;
+                        padding-bottom: 3rem;
+                    }
+                    .Contact-type{
+                        display: flex;
+                        align-items: center;
+                        margin: .5rem 0;
+                    }
+
+                    .Contact-type img{
+                        width: 20px;
+                        margin-right: .5rem;
+                    }
+
+                    .Contact-type a{
+                        text-decoration: none;
+                        color: black;
+                    }
+                `}
+            </style>
         </>
     );
 }

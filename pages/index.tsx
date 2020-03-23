@@ -10,13 +10,14 @@ import Skills from '../components/skills';
 import Languages from '../components/languages';
 import Contact from '../components/contact';
 import Awards from '../components/awards';
+import { GetStaticProps } from 'next';
 
 const styles = (
     <style jsx global>{`
         @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
         body, h1, h2, h3, h4, h5, h6 {
             border: 0;
-            padding: 0;
+            padding: 0; 
             margin: 0;
         }
         

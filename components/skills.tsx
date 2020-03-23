@@ -5,28 +5,6 @@ interface SkillsProps {
     title: string;
 }
 
-
-const styles = (
-    <style jsx>{`
-        .Skills {
-            display: flex;
-            flex-direction: column;
-            border-bottom: 1px solid rgba(200,200,200, .2);
-            padding: 0 1rem;
-            padding-bottom: 3rem;
-        }
-        .Skills-skill{
-            display: flex;
-            align-items: center;
-            margin: .5rem 0;
-        }
-
-        .Skills-skill img{
-            width: 20px;
-            margin-right: .5rem;
-        }
-    `}</style>
-);
 const Skills = ({ data, title }: SkillsProps) => {
     return (
         <>
@@ -39,7 +17,27 @@ const Skills = ({ data, title }: SkillsProps) => {
                     </div>
                 ))}
             </article>
-            {styles}
+            <style jsx>
+                {`
+                    .Skills {
+                        display: flex;
+                        flex-direction: column;
+                        border-bottom: 1px solid rgba(200,200,200, .2);
+                        padding: 0 1rem;
+                        padding-bottom: 3rem;
+                    }
+                    .Skills-skill{
+                        display: flex;
+                        align-items: center;
+                        margin: .5rem 0;
+                    }
+
+                    .Skills-skill img{
+                        width: 20px;
+                        margin-right: .5rem;
+                    }
+                `}
+            </style>
         </>
     );
 }
