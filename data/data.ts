@@ -76,7 +76,7 @@ const Resume: IResume = {
             title: 'Full Stack Engineer',
             company: 'QWIC',
             logo: './images/qwic.png',
-            duration: 'December 2018 - Current',
+            duration: 'December 2018 - Present',
             location: 'Amsterdam, The Netherlands',
             description: [
                 'Full-stack development for an e-commerce platform which provides to our customers a user-friendly application for ordering and managing our products.',
