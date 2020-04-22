@@ -84,7 +84,8 @@ const styles = (
 const Resume = () => (
     <section className="Resume">
         <Head>
-            <title>Freddy Jimenez</title>
+            <title>{data.introduction.name}</title>
+            <meta name="description" content={data.introduction.description} />
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
             <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />

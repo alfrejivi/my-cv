@@ -37,7 +37,7 @@ GA_ID=UA-XXXXXXXX-X
 Store any public assets in `public` folder and access to them as root folder in your website `./`
 
 
-## Customize every section of `/data/data.tsx` with your own information.
+## Customize every section in `/data/data.tsx` with your own information.
 
 ```javascript
 /* Change this file to have your own CV / Resume data */
@@ -77,7 +77,7 @@ If you are interested in **contribute** and make this project much better for th
 
 ## Contact
 
-Freddy Jimenez |
+Freddy Jimenez :
 [alfrejivi@gmail.com](mailto:alfrejivi@gmail.com) |
 [alfrejivi.com](https://alfrejivi.com) |
 [Linkedin](https://www.linkedin.com/in/alfrejivi/) |
