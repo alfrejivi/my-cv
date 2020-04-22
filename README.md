@@ -37,7 +37,7 @@ GA_ID=UA-XXXXXXXX-X
 Store any public assets in `public` folder and access to them as root folder in your website `./`
 
 
-## Change and customize every section in `/data/data.tsx`.
+## Customize every section of `/data/data.tsx` with your own information.
 
 ```javascript
 /* Change this file to have your own CV / Resume data */
@@ -74,6 +74,14 @@ I'm currently using [ZEIT Now](https://zeit.co/) and I highly recommend to use i
 ## Contribute
 
 If you are interested in **contribute** and make this project much better for the community, plese open a [pull request](https://github.com/alfrejivi/my-cv/pulls) or take a look at the [issues](https://github.com/alfrejivi/my-cv/issues).
+
+## Contact
+
+Freddy Jimenez |
+[alfrejivi@gmail.com](mailto:alfrejivi@gmail.com) |
+[alfrejivi.com](https://alfrejivi.com) |
+[Linkedin](https://www.linkedin.com/in/alfrejivi/) |
+[Github](https://github.com/alfrejivi)
 
 ## Other info
 For more information please visit https://nextjs.org/docs 
