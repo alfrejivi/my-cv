@@ -23,12 +23,12 @@ const Experience = ({ data }: ExperienceProps) => {
                                     <span className="Experience-work-location">{work.location}</span>
                                 </div>
                             </div>
-
-                            <ul className="Experience-work-description">
+                            {!!work.description.length && <ul className="Experience-work-description">
                                 {work.description.map((point, index) => (
                                     <li key={`point_${index}`} >{point}</li>
                                 ))}
-                            </ul>
+                            </ul>}
+                            
                             <div className="Experience-work-stack">
                                 {work.stack.map((tool, index) => (
                                     <div className="Experience-work-tool" key={`tool_${index}`} >

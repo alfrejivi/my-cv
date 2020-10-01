@@ -67,16 +67,33 @@ const Resume: IResume = {
     introduction: {
         name: "Freddy Jimenez",
         avatar: "./images/avatar.jpg",
-        location: "Amsterdam, The Netherlands",
+        location: "Barcelona, Spain",
         description: "Versatile Fullstack Developer with 6+ years of experience developing Javascript applications. -- RESTful API development and integrations. -- Translating from design, wireframes, and mockups into responsive, interactive websites/apps, using HTML, CSS, and JavaScript. -- Good eye for design. Sensitivity for details. -- Ease of learning.",
-        position: "Fullstack Engineer @qwic"
+        position: "Frontend Engineer @typeform"
     },
     experience: [
+        {
+            title: 'Frontend Engineer',
+            company: 'Typeform',
+            logo: 'https://media-exp1.licdn.com/dms/image/C560BAQF33xjO3Ow7Xw/company-logo_100_100/0?e=1609372800&v=beta&t=bBjxdu6KCj3taLPmgnzu7BT8gJy0wX9_VEk6Oqp_M0I',
+            duration: 'August 2020 - Present',
+            location: 'Barcelona, Spain',
+            description: [
+            ],
+            stack: [
+                { name: 'Reactjs', icon: 'https://cdn.svgporn.com/logos/react.svg' },
+                { name: 'Typescript', icon: 'https://cdn.svgporn.com/logos/typescript-icon.svg' },
+                { name: 'Redux', icon: 'https://cdn.svgporn.com/logos/redux.svg' },                
+                { name: 'AWS', icon: 'https://cdn.svgporn.com/logos/aws.svg' },
+                { name: 'Git', icon: 'https://cdn.svgporn.com/logos/git-icon.svg' },                
+                { name: 'Styled Components', icon: './images/styled-components.png' },
+            ]
+        },
         {
             title: 'Full Stack Engineer',
             company: 'QWIC',
             logo: './images/qwic.png',
-            duration: 'December 2018 - Present',
+            duration: 'December 2018 - August 2020',
             location: 'Amsterdam, The Netherlands',
             description: [
                 'Full-stack development for an e-commerce platform which provides to our customers a user-friendly application for ordering and managing our products.',
